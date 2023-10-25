@@ -48,6 +48,7 @@ jobs:
     environment:
       name: 'Production'
       url: ${{ https://basant61062.azurewebsites.net/ }}
+      skip_deploy_on_missing_secrets: true
 
     steps:
       - name: Download artifact from build job
