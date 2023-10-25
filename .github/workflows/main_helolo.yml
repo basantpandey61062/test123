@@ -47,7 +47,7 @@ jobs:
     needs: build
     environment:
       name: 'Production'
-      url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
+      url: ${{ https://basant61062.azurewebsites.net/ }}
 
     steps:
       - name: Download artifact from build job
@@ -64,4 +64,4 @@ jobs:
         with:
           app-name: 'helolo'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_5593070718AD4853A3DCC9BACAD20EF2 }}
+          publish-profile: ${{ affba990-965c-411c-9cb3-8ccbc4d33bab }}
